@@ -2,7 +2,12 @@ let currentMessage = 0;
 
 const messages = [
     {
-        text: "Kamu jangan sampai ga makan ya, jangan lupa jaga kesehatan ya sayang. Aku khawatir sama kamu, tapi kamu selalu bilang gapapa gapapa. Makasih udah selalu bikin aku nggak khawatir.",
+        text: "Aku cuma mau bilang, aku bakal selalu ada buat kamu, kayak kamu yang selalu ada buat aku. Jadi kalau ada apa apa, aku minta tolong buat jujur ke aku dan minta tolong ke aku juga yah.. Makasih banget udah selalu bikin aku ngerasa dihargain. Kamu itu spesial banget buat aku, mwahhhhh❤️🤍.",
+        image: "image/cat.png"
+    },
+
+    {
+        text: "Aku mau berterimakasih karena kamu mau bisa membagi waktu mu buat aku walau di sela sela kesibukan dan segela urusan kamu. Makasih ya, aku bener-bener ngerasa beruntung punya kamu yang selalu ada buat aku.",
         image: "image/cat.png"
     },
     {
@@ -13,10 +18,12 @@ const messages = [
         text: "Aku tau kamu capek bangettt, tapi kamu selalu berusaha buat bikin aku tetep ngerasa diperhatiin. Makasih ya sayang ku cinta ku, kamu selalu bikin aku ngerasa istimewa.",
         image: "image/cat.png"
     },
+
     {
-        text: "Aku cuma mau bilang, aku bakal selalu ada buat kamu, kayak kamu yang selalu ada buat aku. Jadi kalau ada apa apa, aku minta tolong buat jujur ke aku dan minta tolong ke aku juga yah.. Makasih banget udah selalu bikin aku ngerasa dihargain. Kamu itu spesial banget buat aku, mwahhhhh❤️🤍.",
+        text: "Kamu jangan sampai ga makan ya, jangan lupa jaga kesehatan ya sayang. Aku khawatir sama kamu, tapi kamu selalu bilang gapapa gapapa. Makasih udah selalu bikin aku nggak khawatir.",
         image: "image/cat.png"
-    }
+    },
+
 ];
 
 function nextMessage() {
