@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d6f0ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    height: 100vh; /* Pastikan tinggi kontainer 100% dari viewport */
+    position: relative; /* Tambahkan ini untuk mengatur posisi relatif elemen */
+    background: url('image/doraemon.jpg') no-repeat center center; /* Atur gambar sebagai background */
+    background-size: cover; /* Pastikan gambar mengisi seluruh area */
+    display: flex; /* Mengaktifkan flexbox */
+    flex-direction: column; /* Mengatur arah elemen menjadi kolom */
+    justify-content: center; /* Mengatur isi ke tengah vertikal */
+    align-items: center; /* Mengatur isi ke tengah horizontal */
+}
+
+.message-box {
+    background-color: rgba(248, 194, 234, 0.9); /* Tambahkan transparansi untuk pesan */
+    border: 2px solid #ccc;
+    padding: 20px;
+    width: 90%;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Hapus margin untuk meratakan elemen */
+    position: relative; /* Pastikan elemen ini berada di atas background */
+    z-index: 1; /* Atur z-index agar pesan muncul di atas background */
+    opacity: 0; /* Awal transparan */
+    transition: opacity 0.5s ease-in-out; /* Transisi saat muncul */
+}
+
+.message-box.visible {
+    opacity: 1; /* Saat terlihat */
+}
+
+.message-box h1 {
+    font-size: 22px;
+    color: #333;
+}
+
+.message-box p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+}
+
+.message-box .highlight {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+
+.message-box img {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.next-btn {
+    margin-top: 20px; /* Menjaga jarak antara kotak pesan dan tombol */
+    background-color: #6bc7ff;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 90%; /* Lebar tombol disesuaikan dengan kotak teks */
+    max-width: 350px; /* Maksimal sama dengan message-box */
+    display: block;
+    z-index: 1; /* Pastikan tombol di atas background */
+}
+
+.next-btn:hover {
+    background-color: #1e90ff;
+}
+
+.next-btn:active {
+    background-color: #006fd1;
+}
